@@ -41,28 +41,19 @@ console.log("vetor:", a);
 */
 
 /*
-let a = [1, 3, 5, 7, 10];
+let a = [1, 3, 5, 7, 10];''''''
 //a.pop(); Elimina o final
 a.shift(); //Elimina o inicio
 console.log("vetor:", a);
 */
 
-//removendo itens do estoque:
+//usando concat para reunir várias Arrays
+let a = [1, 2];
+let b = [0, 3];
 
-let a = ["Guitarra", "Baixo", "Teclado", "Violão"];
-console.log("Elementos:", a);
+let c1 = a.concat(b);
+let c2 = b.concat(a);
 
-let elemento = "Teclado"; //remover este elemento
-let index = a.indexOf(elemento); // encontrar indice do elemento
-
-if (index !== -1) {
-  a.splice(index, 1); //remover o elemento da array.
-  console.log(
-    "Produto",
-    elemento,
-    "Removido do estoque. Estoque atualizado",
-    a
-  );
-} else {
-  console.log("Produto", elemento, "Não encontrado");
-}
+console.log(c1);
+console.log(c2);
+console.log(c2, sort());
