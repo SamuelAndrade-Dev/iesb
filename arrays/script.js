@@ -29,12 +29,40 @@ console.log(h, (length = 3));
 //usando a tag push para adicionar um elemento no final do array.
 /*let a = [1, 3, 5, 7, 10];
 a.push(2);
-    
+
 console.log("vetor:", a);
 */
 
-let a = [1, 3, 5, 7, 10];
+/*let a = [1, 3, 5, 7, 10];
 a.unshift("a");
 a.unshift(0, -1);
 
 console.log("vetor:", a);
+*/
+
+/*
+let a = [1, 3, 5, 7, 10];
+//a.pop(); Elimina o final
+a.shift(); //Elimina o inicio
+console.log("vetor:", a);
+*/
+
+//removendo itens do estoque:
+
+let a = ["Guitarra", "Baixo", "Teclado", "Violão"];
+console.log("Elementos:", a);
+
+let elemento = "Teclado"; //remover este elemento
+let index = a.indexOf(elemento); // encontrar indice do elemento
+
+if (index !== -1) {
+  a.splice(index, 1); //remover o elemento da array.
+  console.log(
+    "Produto",
+    elemento,
+    "Removido do estoque. Estoque atualizado",
+    a
+  );
+} else {
+  console.log("Produto", elemento, "Não encontrado");
+}
